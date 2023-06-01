@@ -7,10 +7,15 @@
     scroll-behavior: smooth;
 }
 
+section {
+    scroll-margin-top: 128px;
+}
+
 /*HEADER*/
 
 nav {
     position: fixed;
+    z-index: 1;
     width: 100%;
     height: 128px;
     top: 0;
