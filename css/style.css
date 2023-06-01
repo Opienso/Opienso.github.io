@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*HEADER*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 128px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: rgb(202, 202, 202);
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 6rem;
+    border-bottom: 1px solid #FC7300;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+}
+
+.naranja{
+    color: #FC7300;
+}
+
+.navbar > ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-inline: 32px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    height: 50px;
+    border-radius: 35px;
+    border-bottom: 2px solid white;
+}
+
+.navbar li:hover{
+    border-bottom: 2px solid #FC7300;
+    box-shadow: 0 0 35px #FC7300;
+    transition: 1s;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(78, 78, 78, 0.509);
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+}
+
+.boton a{
+    text-decoration: none;
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: rgb(35, 35, 35);
+}
+
+.boton:hover{
+    box-shadow: 0 0 35px #FC7300;
+    transition: 1s;
+}
+
+.linea{
+    padding-top: 128px;
+    margin-inline: 9rem;
+}
+
+/*SECCION HERO*/
+
+.hero {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.hero_info{
+    padding-top: 128px;
+    padding-inline: 6rem;
+}
+
+.hero_info h1{
+    font-size: 6.5rem;
+    font-family: "Lato";
+    font-weight: 900;
+    color: rgb(35, 35, 35);
+    padding-bottom: 16px;
+}
+
+.efecto_maquina{
+    background: #f7dd4a;
+    position: relative;
+}
+
+.efecto_maquina::after{
+    content: "";
+    border-left: 3px solid black;
+    background-color: white;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    animation: maquina 1.5s alternate steps(9);
+}
+
+@keyframes maquina {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+/* .parpadeo {
+    animation: titileo 1s infinite;
+}
+
+@keyframes titileo {
+    0% {
+        border-color: white;
+    }
+
+    50% {
+        border-right: 3px solid black;
+    }
+
+    100% {
+        border-color: white;
+    }
+} */
+
+
+.hero_info h4{
+    font-size: 1.4rem;
+    font-family: "Roboto Condensed";
+    color: rgb(35, 35, 35);
+    padding-bottom: 32px;
+}
+
+.hero_info p{
+    font-size: 2rem;
+    font-family: "Roboto Condensed";
+    color: rgb(35, 35, 35);
+    padding-bottom: 32px;
+}
+
+.hero_info ul{
+    display: flex;
+}
+
+.hero_info li {
+    list-style: none;
+    padding-right: 2rem;
+}
+
+.hero_info li a{
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+}
+
+.hero_right {
+    background-color: #1F8A70;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.hero_image{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+
+}
+
+.hero_image img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+/*SECCION SOBRE MI*/
+
+.sobre_mi{
+    background-color: white;
+    display: flex;
+}
+
+.image{
+    width: 50%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.sobre_mi_info{
+    width: 60%;
+    padding: 72px;
+}
+
+.titulo_secundario{
+    font-size: 3rem;
+    font-family: "Lato";
+    color: rgb(35, 35, 35);
+    padding-bottom: 16px;
+    text-decoration: underline;
+    text-decoration-color: #FC7300;
+}
+
+.parrafo_secundario{
+    font-size: 2rem;
+    font-family: "Roboto Condensed";
+    color: rgb(35, 35, 35);
+    padding-bottom: 32px;
+}
+
+.sobre_mi_info h3{
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: "Roboto Condensed";
+    color: #1F8A70;
+    padding-bottom: 32px;
+}
+
+.boton-cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FC7300;
+    width: 230px;
+    height: 70px;
+    margin-left: 40%;
+    border-radius: 35px;
+}
+
+.boton-cv a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "Lato";
+    color: white;
+}
+
+/*HABILIDADES*/
+.Habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 72px;
+}
+
+
+.subtitulo_secundario {
+        padding-top: 32px;
+        font-size: 2rem;
+        font-family: "Lato";
+        color: rgb(35, 35, 35);
+        padding-bottom: 16px;
+        text-decoration: underline;
+        text-decoration-color: #FC7300;
+        padding-bottom: 64px;
+}
+
+.lenguajes{
+    display: flex;
+    gap: 8rem;
+    padding-bottom: 32px;
+}
+
+.tarjetita{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 5px gray;
+}
+
+
+.tarjetita_img{
+    width: 100px;
+    height: 100px;
+}
+
+.tarjetita_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjetita_nombre{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Roboto Condensed";
+    color: rgb(35, 35, 35);
+    padding-top: 1rem;
+}
+
+.herramientas {
+    display: flex;
+    gap: 8rem;
+    padding-bottom: 32px;
+}
+
+
+.librerias{
+    display: flex;
+    gap: 8rem;
+    padding-bottom: 32px;
+}
+
+
+/*SECCION PROYECTOS*/
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    padding-left: 7rem;
+}
+
+.contenedor_proyectos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.proyecto {
+    width: 460px
+
+}
+
+.proyecto a img{
+    width: 100%;
+    border-radius: 55px;
+}
+
+.proyecto img:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.203);
+}
+
+.proyecto h5{
+    padding-top: 32px;
+    font-size: 1.6rem;
+    font-family: "Lato";
+    color: rgb(35, 35, 35);
+    padding-bottom: 16px;
+}
+
+.proyecto p{
+    padding-top: 16px;
+    font-size: 1rem;
+    font-family: "Roboto Condensed";
+    color: rgb(35, 35, 35);
+    padding-bottom: 72px;
+}
+
+/*FOOTER*/
+
+.footer-container{
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00425A;
+}
+
+.footer-top{
+    padding-bottom: 2rem;
+}
+
+.footer-top ul{
+    display: flex;
+}
+
+.footer-top li{
+    list-style: none;
+}
+
+.footer-top a{
+    text-decoration: none;
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(5, 5, 5);
+    padding-inline: 16px;
+}
+
+.copyright{
+    font-family: "lato";
+    
+}
