@@ -129,7 +129,7 @@ nav {
     right: 0;
     height: 100%;
     position: absolute;
-    animation: maquina 1.5s alternate steps(9);
+    animation: maquina 1.5s alternate  steps(9);
 }
 
 @keyframes maquina {
